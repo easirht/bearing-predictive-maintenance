@@ -1,4 +1,5 @@
 # Bearing Fault Diagnosis: Cross-Fault-Size Generalization (CWRU)
+**Live demo:** [Bearing Fault Monitor](https://bearing-predictive-maintenance-dxcmyvq5bs7pwqzzerkyex.streamlit.app)
 
 Machine learning pipeline for bearing fault diagnosis on the CWRU bearing dataset, built from a mechanical engineering perspective. The project asks a simple question: **do models that look accurate on CWRU still work when the fault size changes?**
 
@@ -43,6 +44,7 @@ PASTE_TABLE_ROWS_HERE
 - The SVM was not tuned, so SVM results should not be used to compare feature sets.
 - The envelope band (2-5.5 kHz) and frequency tolerance were fixed by hand, not optimized.
 - The asymmetry between the two directions is not yet explained. A possible reason is that the weaker 0.007 in impacts leave less distinct envelope peaks, but this is a hypothesis, not a tested result.
+- The dashboard is a workflow demo. Its model is trained on all fault sizes and loads, and the sample signals come from that same data, so its diagnoses are not a valid test. Performance claims come only from the cross-fault-size experiments (06). On the Normal sample it still flags about 25% of windows as faulty.
 
 ## Run it
 
