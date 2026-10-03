@@ -31,7 +31,18 @@ Cross-fault-size macro F1 (mean ± std over 10 seeds):
 
 | Direction (train -> test, in) | Features | Model | Macro F1 |
 |---|---|---|---|
-PASTE_TABLE_ROWS_HERE
+| 0.007 -> 0.014 | envelope | RandomForest | 0.174 ± 0.007 |
+| 0.007 -> 0.014 | envelope | SVM | 0.173 ± 0.008 |
+| 0.007 -> 0.014 | time | RandomForest | 0.532 ± 0.005 |
+| 0.007 -> 0.014 | time | SVM | 0.182 ± 0.004 |
+| 0.007 -> 0.014 | time+envelope | RandomForest | 0.514 ± 0.069 |
+| 0.007 -> 0.014 | time+envelope | SVM | 0.229 ± 0.016 |
+| 0.014 -> 0.007 | envelope | RandomForest | 0.682 ± 0.014 |
+| 0.014 -> 0.007 | envelope | SVM | 0.401 ± 0.073 |
+| 0.014 -> 0.007 | time | RandomForest | 0.260 ± 0.011 |
+| 0.014 -> 0.007 | time | SVM | 0.371 ± 0.006 |
+| 0.014 -> 0.007 | time+envelope | RandomForest | 0.457 ± 0.006 |
+| 0.014 -> 0.007 | time+envelope | SVM | 0.285 ± 0.014 |
 
 ![Feature set comparison](results/06_multi_seed_comparison.png)
 
