@@ -1,0 +1,9 @@
+test_load_HP,model,accuracy,macro_f1
+0,RandomForest,1.0,1.0
+0,SVM,1.0,1.0
+1,RandomForest,1.0,1.0
+1,SVM,1.0,1.0
+2,RandomForest,1.0,1.0
+2,SVM,1.0,1.0
+3,RandomForest,1.0,1.0
+3,SVM,1.0,1.0
