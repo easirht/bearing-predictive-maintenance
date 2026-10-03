@@ -22,3 +22,15 @@ def load_signal(filename):
     d = loadmat(DATA_DIR / filename)
     key = [k for k in d if k.endswith("DE_time")][0]
     return d[key].flatten()
+
+
+# fault size (inch) -> load (HP) -> class -> file
+FILES_BY_SIZE = {
+    "0.007": FILES_BY_LOAD,
+    "0.014": {
+        0: {"Normal": "97.mat", "Inner race": "169.mat", "Ball": "185.mat", "Outer race": "197.mat"},
+        1: {"Normal": "98.mat", "Inner race": "170.mat", "Ball": "186.mat", "Outer race": "198.mat"},
+        2: {"Normal": "99.mat", "Inner race": "171.mat", "Ball": "187.mat", "Outer race": "199.mat"},
+        3: {"Normal": "100.mat", "Inner race": "172.mat", "Ball": "188.mat", "Outer race": "200.mat"},
+    },
+}
